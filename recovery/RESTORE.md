@@ -29,15 +29,15 @@
 - 以后新增的重要记忆，优先整理到 Brain-Canonical
 
 ## 当前可用备份包
-- 主脑备份：~/Brain-Backups/Brain-Canonical-2026-03-07-124048.tar.gz
-- OpenClaw快照：~/OpenClaw-Backups/openclaw-home-2026-03-07-130226.tar.gz
+- 主脑备份：~/Brain-Backups/Brain-Canonical-2026-03-07-142256.tar.gz
+- OpenClaw快照：~/OpenClaw-Backups/openclaw-home-2026-03-07-142256.tar.gz
 
 ## 快速恢复（当前版本）
 ### 只恢复主记忆
-tar -xzf ~/Brain-Backups/Brain-Canonical-2026-03-07-124048.tar.gz -C ~
+tar -xzf ~/Brain-Backups/Brain-Canonical-2026-03-07-142256.tar.gz -C ~
 
 ### 恢复 OpenClaw 状态
-tar -xzf ~/OpenClaw-Backups/openclaw-home-2026-03-07-130226.tar.gz -C ~
+tar -xzf ~/OpenClaw-Backups/openclaw-home-2026-03-07-142256.tar.gz -C ~
 
 ### 恢复后检查
 ls -ld ~/.openclaw ~/Brain-Canonical
