@@ -3,7 +3,7 @@
 这是 PG 的独立脑入口。
 
 ## 主读取顺序
-1. `brain/identity/`
+1. `03-LONGTERM/IDENTITY/`
 2. `brain/handoff/模型切换交接流程-V2-热切换收口版.md`
 3. `brain/memory/`
 4. `brain/reference/`（仅参考，不覆盖主人格）
