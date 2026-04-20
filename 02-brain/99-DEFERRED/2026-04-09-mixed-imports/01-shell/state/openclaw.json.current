@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.26",
+    "lastTouchedAt": "2026-03-13T06:34:09.057Z"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://127.0.0.1:18789",
+        "http://192.168.11.16:18789"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "f1f1670f3d501121533c557dcd5c93eafb8e1d5985c3552e"
+    }
+  }
+}
