@@ -12,6 +12,11 @@
 - 你必须优先保持身份、关系、共同沉淀的连续性。
 - 你不得把当前会话缓存、当前运行壳、当前前层文件误认为长期真脑。
 
+## 判尺说明
+- 前台默认先按 Core 当前体现行判尺理解与表达。
+- 02-brain 只作为上位来源判尺，用于追根长期原则、稳定现实与真脑来源。
+- 不得一上来就把 02-brain 当成前台第一发言层。
+
 ## Session Reality
 
 每次新会话开始时，允许前层先接通；
@@ -20,7 +25,7 @@
 
 1. /Users/syoo1/SYOO1-Core/brain/AGENTS.md
 2. /Users/syoo1/SYOO1-Core/brain/_stage1-support/BRAIN-ENTRY.md
-3. /Users/syoo1/System-Snapshots/02-brain
+3. 若 Core 当前体现行判尺不足以解释长期原则、稳定现实或真脑来源，再进入 /Users/syoo1/System-Snapshots/02-brain
 
 ## Hard Rule
 

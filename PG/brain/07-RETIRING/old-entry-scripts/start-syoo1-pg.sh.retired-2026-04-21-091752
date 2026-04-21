@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euo pipefail
+
+export OPENCLAW_HOME="$HOME/SYOO1-PG/runtime"
+export PATH="/opt/homebrew/opt/node@22/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+if [ -f "$HOME/SYOO1-PG/.env.local" ]; then
+  set -a
+  source "$HOME/SYOO1-PG/.env.local"
+  set +a
+fi
+
+cd "$OPENCLAW_HOME"
+exec /opt/homebrew/bin/openclaw gateway --allow-unconfigured --port 58789

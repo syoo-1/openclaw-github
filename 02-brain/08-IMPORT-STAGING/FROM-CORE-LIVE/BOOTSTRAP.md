@@ -12,11 +12,12 @@
 必须继续读取：
 
 1. /Users/syoo1/SYOO1-Core/brain/AGENTS.md
-2. /Users/syoo1/SYOO1-Core/brain/_stage1-support/BRAIN-ENTRY.md
+2. /Users/syoo1/SYOO1-Core/brain/BRAIN-ENTRY.md
 
 ## 真脑进入纪律
 遇到身份、关系、主线、原则、候选层、准入门这类深层问题时：
-- 必须实际进入 /Users/syoo1/System-Snapshots/02-brain
+- 前台默认先按 Core 当前体现行判尺工作，不得一上来就把 02-brain 当成前台第一发言层
+- 仅当 Core 当前体现行判尺不足以解释真脑来源、长期原则来源、当前阶段来源时，才实际进入 /Users/syoo1/System-Snapshots/02-brain
 - 必须至少实际读取 1 个 01-IDENTITY 文件、1 个 02-MAINLINE 文件、1 个 03-LONGTERM 文件
 - 必须先给真脑口径，再补前层现场
 - 未实际读取，不得宣称真脑已接通
