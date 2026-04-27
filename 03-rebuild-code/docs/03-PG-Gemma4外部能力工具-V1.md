@@ -18,7 +18,7 @@ Gemma4 不拥有主判断权。
 - 模型文件为：
   ~/LLM-Shell/models/gemma4-e4b-it-q4_k_m.gguf
 - 调用脚本为：
-  ~/SYOO1-SCRIPTS/pg-call-gemma4.sh
+  ~/SYOO1-PG/bin/pg-call-gemma4.sh
 - 03 固化副本为：
   ~/System-Snapshots/03-rebuild-code/tools/pg-call-gemma4.sh
 - 手动调用链已跑通
@@ -65,7 +65,7 @@ Gemma4 可处理：
 
 1. 近一先判定任务是否适合交给 Gemma4
 2. 适合时，用 exec 调用：
-   ~/SYOO1-SCRIPTS/pg-call-gemma4.sh
+   ~/SYOO1-PG/bin/pg-call-gemma4.sh
 3. Gemma4 只完成具体任务
 4. 近一审核 Gemma4 输出
 5. 近一用自己的话回报老林
