@@ -1,3 +1,15 @@
+## Core 能力触发与回归规则入口
+
+涉及 Core 的模型位、能力触发、Gemma4 / oMLX 外部工具、GPT-5.4 专家补强、任务结束回归、旧 Core 默认 Gemma4 口径废止等问题时，读取：
+
+- `~/SYOO1-Core/brain/CORE-能力触发与回归规则-V1.md`
+
+并以上位 03 规则为准：
+
+- `~/System-Snapshots/03-rebuild-code/docs/03-Core-PG主判与外部工具权力结构-V1.md`
+
+---
+
 # AGENTS
 
 当前运行体进入阶段1：保脑回接。
