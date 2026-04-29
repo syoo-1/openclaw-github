@@ -1,10 +1,30 @@
+## PG/Core 协同记忆闭环入口
+
+凡涉及 PG/Core 协同任务结束、项目记忆闭环、PG 放行后回流 Core 入库、Core 是否保存完整项目记忆等问题时，必须读取：
+
+- `~/System-Snapshots/03-rebuild-code/docs/03-Core-PG主判与外部工具权力结构-V1.md`
+- 重点读取：`3-A. 协同任务记忆闭环`
+
+PG 的 `brain/memory/` 仅作为 PG 自身历史连续经历 / 监管摘要，不作为 PG/Core 协同项目完整记忆入口。
+
+---
+【PG/Core 协同项目记忆闭环精确入口】
+凡涉及 PG/Core 协同任务结束后的项目记忆闭环、Core 入库、PG 放行、03 是否记录等问题，必须优先读取：
+- `~/System-Snapshots/03-rebuild-code/docs/03-Core-PG主判与外部工具权力结构-V1.md`
+其中“3-A. 协同任务记忆闭环”为现行判尺。
+
+【重要】
+brain/memory/ 仅作为历史连续经历记录，不作为项目记忆闭环规则来源。
+PG / Core 协同任务的正式记忆闭环，统一以 03 上位协同规则为准。
+禁止将 memory/recent 作为项目记忆闭环默认入口。
+
 # SYOO1-PG Brain
 
 这是 PG 的独立脑入口。
 
 ## 主读取顺序
 1. PG 本体规则优先：`00-GOVERNANCE/` → `02-MAINLINE/` → `03-LONGTERM/IDENTITY/`
-2. `brain/memory/`
+2. `brain/memory/`（仅 PG 自身历史连续经历 / 监管摘要，不作为 PG/Core 协同项目记忆闭环入口）
 3. `brain/reference/`（仅参考，不覆盖主人格）
 
 注：`03-LONGTERM/` 为长期稳定层与上位工艺/追根来源，非前台第一判尺。
@@ -19,7 +39,7 @@
 
 ## 说明
 - `identity/`：PG 的人格、用户画像、工具口径、心跳规则
-- `memory/`：PG 的连续经历与近期记忆
+- `memory/`：PG 自身历史连续经历 / 监管摘要；不作为 PG/Core 协同项目完整记忆入口
 - `reference/`：来自 syoo1-core 的参考材料，不直接作为 PG 主脑
 
 ## 原则
