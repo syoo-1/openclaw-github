@@ -31,6 +31,10 @@ done
 TERMS=("$@")
 
 case "$MODE" in and|or) ;; *) echo "错误：--mode 只能是 and/or"; exit 1 ;; esac
+
+REFRESH="$HOME/System-Snapshots/03-rebuild-code/tools/refresh-memory-index-v1.sh"
+[[ -x "$REFRESH" ]] && "$REFRESH" >/dev/null 2>&1 || true
+
 [[ -f "$INDEX" ]] || { echo "缺少索引：$INDEX"; exit 1; }
 
 RULE_HINT_RE="协同|闭环|主判|模型|工具|权力|Gemma4|oMLX|GPT|Kimi|放行|裁定"
