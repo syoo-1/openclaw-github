@@ -46,7 +46,8 @@ fi
 
 echo
 echo "=== Step 6: manual follow-ups ==="
-echo "1. Confirm openclaw is 2026.2.26"
+echo "1. Confirm current openclaw version:"
+openclaw --version
 echo "2. Confirm gateway config exists in ~/.openclaw/openclaw.json"
 echo "3. Confirm Tailscale connection state if needed"
 echo "4. Confirm brain GitHub fallback URL/branch if you want remote recovery"
