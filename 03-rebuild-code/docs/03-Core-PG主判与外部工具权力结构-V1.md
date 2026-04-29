@@ -367,6 +367,29 @@ Core session 必须留痕；是否放行仍由 PG 裁定。
 该桥不写脑、不自动入库、不自动修改 03；只有 PG 放行或老林直接授权后，才可进入 Core 项目记忆。
 
 
+### 2-C. Core 回传 PG 后台桥工艺
+
+Core 完成后台执行后，可通过 PG gateway 将结构化摘要 / 回报交回 PG。
+
+PG UI 可以不打开；只要 PG gateway 正常运行，PG 可通过后台 CLI 接收 Core 回传。
+
+Core 回传 PG 后台摘要，优先使用：
+
+`03-rebuild-code/tools/core-dispatch-pg-v1.sh`
+
+该桥必须通过：
+
+`03-rebuild-code/tools/pg-openclaw.sh`
+
+固定指向 PG gateway，禁止误连默认 `18789` 或嵌套 `.openclaw`。
+
+Core 回传内容只允许是结构化摘要、异常点、是否建议放行，不得变成长篇讨论。
+
+Core 回传不等于 Core 获得裁定权；是否放行、是否回报老林、是否入库，仍由 PG 裁定，老林最高调度权例外。
+
+该桥不写脑、不自动入库、不自动修改 03；只有 PG 放行或老林直接授权后，才可进入 Core 项目记忆。
+
+
 ### 3-A. 协同任务记忆闭环
 
 协同不是 PG / Core 对话式开会，而是任务流转与记忆闭环。
