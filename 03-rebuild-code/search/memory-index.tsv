@@ -1,5 +1,6 @@
 priority	source	layer	state	path	title
 98	core-live	memory-layers	current	/Users/syoo1/SYOO1-Core/brain/MEMORY-LAYERS.md	MEMORY-LAYERS
+100	core-live	project-memory	current	/Users/syoo1/SYOO1-Core/brain/PROJECT-MEMORY/2026/04/2026-04-29-SEARCH-LOOP-TEST-001.md	SEARCH-LOOP-TEST-001 搜索体系小闭环验收
 100	core-live	inner-memory	current	/Users/syoo1/SYOO1-Core/brain/INNER-MEMORY.md	INNER-MEMORY
 92	pg-live	mainline	current	/Users/syoo1/SYOO1-PG/brain/02-MAINLINE/CURRENT.md	PG MAINLINE CURRENT
 92	pg-live	mainline	current	/Users/syoo1/SYOO1-PG/brain/02-MAINLINE/CURRENT-REALITY.md	PG 自动触发当前现实
