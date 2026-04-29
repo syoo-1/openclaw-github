@@ -31,6 +31,7 @@ for label in \
   com.syoo1.syoo1-core \
   com.syoo1.syoo1-pg \
   com.syoo1.pg-guard-core \
+  com.syoo1.core-guard-pg \
   com.syoo1.sync-core-brain-to-02 \
   com.syoo1.sync-pg-full-chain \
   com.syoo1.sync-system-snapshots-github
