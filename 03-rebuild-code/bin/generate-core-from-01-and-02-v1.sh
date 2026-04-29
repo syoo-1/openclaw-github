@@ -114,9 +114,9 @@ files = [
 for p in files:
     data = json.loads(p.read_text())
     if "gateway" in data:
-        data["gateway"]["port"] = 38789
+        data["gateway"]["port"] = 12289
         data["gateway"].setdefault("controlUi", {})
-        data["gateway"]["controlUi"]["allowedOrigins"] = ["http://127.0.0.1:38789"]
+        data["gateway"]["controlUi"]["allowedOrigins"] = ["http://127.0.0.1:12289"]
     if str(p).endswith("/runtime/.openclaw/openclaw.json"):
         data["agents"]["defaults"]["workspace"] = "$DST_CORE_NEW/runtime/workspace"
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
@@ -136,7 +136,7 @@ cat > "$DST_CORE_NEW/README.md" <<EOF
 
 实例角色：
 - Core 待生成体
-- 目标端口：38789
+- 目标端口：12289
 
 生成时间：
 $(date)

@@ -4,5 +4,5 @@ set -a
 source "$HOME/SYOO1-Core/.env.local"
 set +a
 cd "${1:-$HOME/SYOO1-Core/runtime}" || exit 1
-PORT="${2:-38789}"
+PORT="${2:-12289}"
 OPENCLAW_HOME="$PWD" /opt/homebrew/bin/openclaw gateway --allow-unconfigured --port "$PORT"

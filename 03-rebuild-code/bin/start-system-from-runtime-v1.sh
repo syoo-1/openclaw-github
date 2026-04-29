@@ -3,7 +3,7 @@ set -euo pipefail
 
 SYSTEM_HOME="${1:-$HOME/SYOO1-Core}"
 RUNTIME_DIR="$SYSTEM_HOME/runtime"
-PORT="${2:-38789}"
+PORT="${2:-12289}"
 
 export PATH="/opt/homebrew/opt/node@22/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 

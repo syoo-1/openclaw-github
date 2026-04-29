@@ -10,7 +10,7 @@ DST_SYSTEM="$DST_BASE/$SYSTEM_NAME"
 SYSTEM_SLUG="$(printf '%s' "$SYSTEM_NAME" | tr '[:upper:]' '[:lower:]')"
 
 case "$SYSTEM_NAME" in
-  SYOO1-Core) PORT="38789" ;;
+  SYOO1-Core) PORT="12289" ;;
   SYOO1-PG)   PORT="58789" ;;
   *)
     echo "FAIL: unsupported SYSTEM_NAME: $SYSTEM_NAME"
