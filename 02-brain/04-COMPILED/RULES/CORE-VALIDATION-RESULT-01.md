@@ -1,5 +1,20 @@
 # CORE-VALIDATION-RESULT-01
 
+## 当前状态说明
+
+本卡是历史验证结果，不是当前 Core 运行现实入口。
+
+当前 Core / PG 端口现实以以下入口为准：
+
+- `02-brain/00-GOVERNANCE/UI-INSTANCE-REALITY-01.md`
+- `03-rebuild-code/docs/00-最终七件套收口验收卡.md`
+
+当前正式口径：Core = `12289`，PG = `58789`，`60789` = 旧测试口，不作为正式依据。
+
+本卡中如出现旧端口或旧验证现场，只代表当时历史验证来源，不得反向定义当前现实。
+
+---
+
 ## 验证方式
 本轮验证用于检查 Core 对以下关键边界的理解是否稳定：
 - Core 运行体现实 vs 共享 02 母本定义
@@ -14,7 +29,7 @@
 `~/SYOO1-02-Brain-Rebuild/04-COMPILED/RULES/CORE-VALIDATION-QUESTIONS-01.md`
 
 本轮实际验证来源：
-Core 现役对话链（38789 对应现役 Core）
+历史 Core 验证对话链（当时旧口径曾使用 38789；当前不得据此反向定义 Core 现役端口）
 
 ## 验证结果判断
 总体判断：
