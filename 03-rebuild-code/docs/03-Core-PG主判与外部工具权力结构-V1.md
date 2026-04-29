@@ -344,6 +344,29 @@ OpenClaw 内的运行现场、前层记忆、临时会话，不得覆盖 PG / Co
 一句话：OpenClaw 是施工台，不是另一个主脑。
 
 
+### 2-B. PG 派发 Core 后台桥工艺
+
+PG 是前台主持入口，Core 是后台执行与完整项目记忆承载脑。
+
+Core UI 可以不打开；只要 Core gateway 正常运行，Core 可通过后台 CLI 接任务。
+
+PG / 老林派发 Core 后台任务，优先使用：
+
+`03-rebuild-code/tools/pg-dispatch-core-v1.sh`
+
+该桥必须通过：
+
+`03-rebuild-code/tools/core-openclaw.sh`
+
+固定指向 Core gateway，禁止误连默认 `18789` 或嵌套 `.openclaw`。
+
+Core 回交只交结构化执行摘要，不交长篇过程。
+
+Core session 必须留痕；是否放行仍由 PG 裁定。
+
+该桥不写脑、不自动入库、不自动修改 03；只有 PG 放行或老林直接授权后，才可进入 Core 项目记忆。
+
+
 ### 3-A. 协同任务记忆闭环
 
 协同不是 PG / Core 对话式开会，而是任务流转与记忆闭环。
