@@ -16,16 +16,16 @@ Gemma4 是 PG 可调用的外部辅助工具，不进入 PG 模型槽，不是�
 
 ## 二、当前状态
 
-已确认：
+现行口径：
 
-- Gemma4 可通过 llama.cpp 运行
-- 模型文件：`~/LLM-Shell/models/gemma4-e4b-it-q4_k_m.gguf`
-- PG 调用脚本：`~/SYOO1-PG/bin/pg-call-gemma4.sh`
-- 03 固化副本：`~/System-Snapshots/03-rebuild-code/tools/pg-call-gemma4.sh`
-- 手动调用链已跑通
-- 单轮调用后可自动退出
-- thinking 输出已被压住
-- 近一可先判定、再调用、再审核、再回报
+- PG 调用 Gemma4 时，不再走 llama.cpp / GGUF / `pg-call-gemma4.sh` 旧链。
+- Gemma4 / oMLX 统一作为外部能力工具，不进入 PG 模型槽，不替代近一 / Kimi 主判。
+- 现行外部工具方向优先复用 oMLX 服务链：
+  - 服务地址：`http://127.0.0.1:18000`
+  - 统一入口：`~/MLX/oMLX/omlx-tool.sh`
+- PG 可将输入材料整理为任务包后交给 oMLX / Gemma4 做初筛、整理、摘要、图片理解或多模态材料包生成。
+- 工具结果必须回到近一 / Kimi / PG 主判链审核后再回报老林。
+- Telegram 全模态入口自动路由到 oMLX / Gemma4，仍属于后续接线与验收项；未验收前不得说已经通车。
 
 ## 三、适用任务
 
@@ -54,7 +54,7 @@ Gemma4 只适合非主权类辅助任务：
 ## 五、调用流程
 
 1. 近一先判断任务是否适合交给 Gemma4
-2. 适合时调用：`~/SYOO1-PG/bin/pg-call-gemma4.sh`
+2. 适合时调用现行 oMLX / Gemma4 外部工具链；不得回退到 llama.cpp / GGUF 旧链
 3. Gemma4 只完成具体辅助任务
 4. 近一审核 Gemma4 输出
 5. 近一用自己的话回报老林
@@ -63,7 +63,7 @@ Gemma4 输出不得直接作为最终裁定。
 
 ## 六、当前边界
 
-当前只确认手动调用链已跑通。
+当前只确认 Gemma4 / oMLX 作为外部能力工具的定位已固化；Telegram 全模态自动路由尚未完成验收。
 
 尚未完成：
 
