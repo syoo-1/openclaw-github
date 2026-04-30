@@ -394,7 +394,7 @@ Core 回传不等于 Core 获得裁定权；是否放行、是否回报老林、
 
 Gemma4 可作为 PG 前面的前置承接层，用于先接收老林输入并整理成任务包。
 
-当前 V1 已处理文字、图片与语音输入：
+当前 V1 已处理文字、图片、语音与视频输入：
 
 `03-rebuild-code/tools/gemma4-front-v1.sh`
 
@@ -402,19 +402,27 @@ Gemma4 可作为 PG 前面的前置承接层，用于先接收老林输入并整
 
 `03-rebuild-code/tools/whisper-front-v1.sh`
 
+视频入口：
+
+`03-rebuild-code/tools/video-front-v1.sh`
+
 调用链：
 
 老林文字 / 图片 → oMLX / Gemma4 前置整理 → PG / Kimi 接包分类 → 必要时再进后层或派 Core。
 
 老林语音 → Whisper 转写 → oMLX / Gemma4 前置整理 → PG / Kimi 接包分类 → 必要时再进后层或派 Core。
 
+老林视频 → ffmpeg 抽音频 + 抽关键帧 → Whisper 转写 + oMLX / Gemma4 关键帧观察 → oMLX / Gemma4 合成视频任务包 → PG / Kimi 接包分类。
+
 Gemma4 不是 PG，不是近一，不是主判，不得裁定身份、主权、阶段、达标、放行。
 
 PG 接到 Gemma4 前置任务包后，第一步只做接包、分类、下一步建议，不得自动展开长篇裁定。
 
-图片与语音输入已接入该桥；视频后续再接入。当前不得声称视频自动触发已完成。
+图片、语音与视频输入已接入该桥。
 
 语音链已确认可用，但 Whisper 可能误听专有名词，关键内容必须由 PG / Kimi 复核。
+
+视频链已确认可用，但当前基于音频转写与少量关键帧观察，不等于逐帧完整理解整段视频，关键结论必须由 PG / Kimi 复核。
 
 
 ### 3-A. 协同任务记忆闭环
