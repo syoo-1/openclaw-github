@@ -1,0 +1,31 @@
+version: rules-yaml-min-v1
+status: active
+principle: "最小字段、机器可读、逐步压缩旧长规则，不再继续手工扩写长规则。"
+
+rules:
+  - id: R001
+    title: 达到阶段阈值后停止加法
+    scope: system_build
+    trigger: 阶段规则、记忆、结构开始变厚或重复时
+    action: 停止新增长规则，转入 rules.yaml 最小字段压缩
+    priority: high
+    status: active
+    source: 2026-05-01 当前收口原则
+
+  - id: R002
+    title: 新规则优先结构化承接
+    scope: rule_system
+    trigger: 需要新增规则、原则、判断尺时
+    action: 优先写入 rules.yaml 条目，不再新建手工长规则文件
+    priority: high
+    status: active
+    source: 2026-05-01 当前收口原则
+
+  - id: R003
+    title: 旧长规则只做映射不继续扩张
+    scope: rule_migration
+    trigger: 处理既有长规则文件时
+    action: 只抽取关键触发、动作、优先级、状态，映射进 rules.yaml
+    priority: high
+    status: active
+    source: 2026-05-01 当前收口原则
