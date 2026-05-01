@@ -29,3 +29,66 @@ rules:
     priority: high
     status: active
     source: 2026-05-01 当前收口原则
+
+  - id: R004
+    title: 02 准入规则
+    scope: governance_admission
+    trigger: 判断新内容是否应进入 02-brain 正式层时
+    action: 按长期记忆、主线保持、壳无关迁移价值、贴合但不迎合四问进行准入判断
+    priority: high
+    status: mapped
+    source: 00-GOVERNANCE/02-准入规则.md
+
+  - id: R005
+    title: 02 状态分层规则
+    scope: governance_layering
+    trigger: 判断材料应进入 Raw、Compiled、Adapter、Draft、Retired 或 Thrown-Away 时
+    action: 按状态分层规则归位，避免草稿、来源、正式规则混层
+    priority: high
+    status: mapped
+    source: 00-GOVERNANCE/02-状态分层规则.md
+
+  - id: R006
+    title: Core 能力触发与回归规则
+    scope: core_capability_routing
+    trigger: Core 需要调用 Gemma4、Kimi、GPT-5.4 或回归主脑判断时
+    action: 按能力调用顺序与回归硬闸执行，防止外部能力替代主脑裁定
+    priority: high
+    status: mapped
+    source: 08-IMPORT-STAGING/FROM-CORE-LIVE/CORE-能力触发与回归规则-V1.md
+
+  - id: R007
+    title: 主脑唯一与可回滚原则
+    scope: brain_sovereignty
+    trigger: 判断系统真源、主脑数量、回滚能力时
+    action: 坚持一个主脑，并保证系统建设结果可回滚
+    priority: high
+    status: mapped
+    source: 08-IMPORT-STAGING/FROM-OLD-02/001-主脑唯一与可回滚原则.md
+
+  - id: R008
+    title: 主脑主权原则
+    scope: brain_sovereignty
+    trigger: 壳、运行体、前层记忆与主脑发生权威冲突时
+    action: 以主脑为最高真源，运行壳和前层材料不得覆盖主脑判断
+    priority: high
+    status: mapped
+    source: 08-IMPORT-STAGING/FROM-OLD-02/主脑主权原则-V1.md
+
+  - id: R009
+    title: 同步控制权原则
+    scope: sync_governance
+    trigger: 母本化阶段判断同步方向、自动回流、运行体写回时
+    action: 控制同步入口与回流权，防止运行体污染母本
+    priority: high
+    status: mapped
+    source: 08-IMPORT-STAGING/FROM-OLD-02/同步控制权原则-母本化阶段.md
+
+  - id: R010
+    title: 最小读取与节约 Token 原则
+    scope: reading_policy
+    trigger: 需要读取主脑材料、规则、上下文或来源文件时
+    action: 默认最小读取，按需展开，不把大范围读取作为默认动作
+    priority: high
+    status: mapped
+    source: 08-IMPORT-STAGING/FROM-OLD-02/最小读取与节约Token原则.md
