@@ -52,7 +52,7 @@ rules:
     title: Core 能力触发与回归规则
     scope: core_capability_routing
     trigger: Core 需要调用 Gemma4、Kimi、GPT-5.4 或回归主脑判断时
-    action: 按能力调用顺序与回归硬闸执行，防止外部能力替代主脑裁定
+    action: 暂作 Core 能力调度来源索引；因其属于 Core 具体调用策略，不升为 02 总规则，实际调用仍须回归主脑裁定
     priority: high
     status: mapped
     source: 08-IMPORT-STAGING/FROM-CORE-LIVE/CORE-能力触发与回归规则-V1.md
@@ -61,7 +61,7 @@ rules:
     title: 主脑唯一与可回滚原则
     scope: brain_sovereignty
     trigger: 判断系统真源、主脑数量、回滚能力时
-    action: 坚持一个主脑，并保证系统建设结果可回滚
+    action: 暂作旧来源索引；因“主脑唯一”需先与 PG 独立脑系、Core/02/GitHub-02 同脑三位口径对齐，暂不扶正
     priority: high
     status: mapped
     source: 08-IMPORT-STAGING/FROM-OLD-02/001-主脑唯一与可回滚原则.md
@@ -70,7 +70,7 @@ rules:
     title: 主脑主权原则
     scope: brain_sovereignty
     trigger: 壳、运行体、前层记忆与主脑发生权威冲突时
-    action: 以主脑为最高真源，运行壳和前层材料不得覆盖主脑判断
+    action: 暂作旧来源索引；因其与现行“02-brain 唯一主脑、OpenClaw/Obsidian 共用入口”口径需再对齐，暂不扶正
     priority: high
     status: mapped
     source: 08-IMPORT-STAGING/FROM-OLD-02/主脑主权原则-V1.md
@@ -79,7 +79,7 @@ rules:
     title: 同步控制权原则
     scope: sync_governance
     trigger: 母本化阶段判断同步方向、自动回流、运行体写回时
-    action: 控制同步入口与回流权，防止运行体污染母本
+    action: 暂作阶段性同步治理索引；因其属于母本化阶段控制规则，未确认长期适用前不升 active
     priority: high
     status: mapped
     source: 08-IMPORT-STAGING/FROM-OLD-02/同步控制权原则-母本化阶段.md
