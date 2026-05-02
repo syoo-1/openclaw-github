@@ -92,3 +92,12 @@ rules:
     priority: high
     status: active
     source: 08-IMPORT-STAGING/FROM-OLD-02/最小读取与节约Token原则.md
+
+  - id: R011
+    title: 切壳成功的现实验收标准
+    scope: shell_switch_acceptance
+    trigger: 判断新壳、切壳、换模型或迁移入口是否基本通过时
+    action: 暂作旧来源索引；保留“接上主脑、续上主线、读对关键层”的验收思想，但旧 Brain-Canonical 路径不得直接继承
+    priority: high
+    status: mapped
+    source: 08-IMPORT-STAGING/FROM-OLD-02/轮值成功标准-现实版.md
