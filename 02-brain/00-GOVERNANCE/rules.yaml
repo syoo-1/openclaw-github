@@ -101,3 +101,30 @@ rules:
     priority: high
     status: mapped
     source: 08-IMPORT-STAGING/FROM-OLD-02/轮值成功标准-现实版.md
+
+  - id: R012
+    title: 模型槽与密钥入口规则
+    scope: model_auth_governance
+    trigger: 设置模型槽、备用槽、密钥、环境变量或模型认证方式时
+    action: 模型槽只定义启动与备用结构，不写死长期模型；认证以环境变量和本机终端为正式入口，真实密钥不得进入聊天、文档、Git 或长期明文配置
+    priority: high
+    status: active
+    source: 2026-05-02 final 99-DEFERRED rule residue extraction
+
+  - id: R013
+    title: 03 拼装落地与退场规则
+    scope: rebuild_process
+    trigger: 03 使用 01 与 02 拼装新系统实例时
+    action: 03 必须完成拼装、落地、启动、首份成品快照、与 01/02/03 源件运行脱钩，然后退场
+    priority: high
+    status: active
+    source: 2026-05-02 final 99-DEFERRED rule residue extraction
+
+  - id: R014
+    title: 测试壳与正式系统隔离规则
+    scope: runtime_isolation
+    trigger: 测试壳与正式系统并存、迁移、上线或排查混线风险时
+    action: 测试壳与正式系统必须隔离启动项、端口、状态目录、通道入口和运行身份；无法区分时视为高风险混线
+    priority: high
+    status: active
+    source: 2026-05-02 final 99-DEFERRED rule residue extraction
