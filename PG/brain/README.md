@@ -68,4 +68,17 @@ PG 以后应优先读取这套脑，不再直接依赖 `~/.openclaw` 下的共�
 当前 ACTIVE：
 - brain/PG-GUARD-SKILLS/ACTIVE/001-Core-Skill-放行检查-SKILL-v0.1.md
 - brain/PG-GUARD-SKILLS/ACTIVE/002-PG-03-达标扫描-SKILL-v0.1.md
+- brain/PG-GUARD-SKILLS/ACTIVE/004-安检器-SKILL-v0.1.md
+
+### 安检器触发
+当用户说“用安检器检查一下 XXX / 检查这个 skill 或 app 是否安全 / 检查这个 GitHub 项目能不能装”时，优先读取：
+`brain/PG-GUARD-SKILLS/ACTIVE/004-安检器-SKILL-v0.1.md`
+
+默认口径：
+- 只读扫描
+- 不安装
+- 不运行
+- 不接入 PG 正式运行体
+- 不写入 02-brain
+- 输出 A 安全 / B 可控 / C 不建议 / D 危险
 
